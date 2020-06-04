@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Gamecalculator</string>
+    <string name="satisfactoryLogo">Satisfactory Logo</string>
+    <string name="tabItem">Item</string>
+    <string name="tabFertigung">Fertigung</string>
+    <string name="ecoLogo">ECO Logo</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="title_activity_eco_tab">EcoTab</string>
+    <string name="title_activity_eco">Eco</string>
+    <string name="title_activity_satisfactory">Satisfactory</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

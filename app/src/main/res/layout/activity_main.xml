@@ -12,8 +12,10 @@
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -33,18 +35,20 @@
             <ImageButton
                 android:id="@+id/satisfactoryButton"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="169dp"
                 android:layout_weight="1"
-                android:background="#FFFFFF"
-                app:srcCompat="@drawable/download" />
+                android:background="#FFC107"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/satisfactorylogo" />
 
             <ImageButton
                 android:id="@+id/ecoButton"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="169dp"
                 android:layout_weight="1"
-                android:backgroundTint="#FFFFFF"
-                app:srcCompat="@drawable/header" />
+                android:background="#0798C5"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ecologo" />
         </LinearLayout>
     </ScrollView>
 
