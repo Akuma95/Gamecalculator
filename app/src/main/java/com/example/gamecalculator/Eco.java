@@ -15,6 +15,7 @@ import android.view.View;
 
 import com.example.gamecalculator.ui.main.SectionsPagerAdapter;
 
+
 public class Eco extends AppCompatActivity {
 
     @Override
