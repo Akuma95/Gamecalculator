@@ -10,11 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Satisfactory"
+            android:name=".satisfactory.Satisfactory"
             android:label="@string/title_activity_satisfactory"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
-            android:name=".Eco"
+            android:name=".eco.Eco"
             android:label="@string/title_activity_eco"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MainActivity" />

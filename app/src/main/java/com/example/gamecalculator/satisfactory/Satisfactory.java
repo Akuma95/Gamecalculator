@@ -1,7 +1,9 @@
-package com.example.gamecalculator;
+package com.example.gamecalculator.satisfactory;
 
 import android.os.Bundle;
 
+import com.example.gamecalculator.R;
+import com.example.gamecalculator.satisfactory.tabs.SatisfactoryItem;
 import com.example.gamecalculator.ui.main.SectionsPagerAdapterSatisfactory;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -24,12 +26,6 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class Satisfactory extends AppCompatActivity {
 
-    private DatabaseReference mDatabase;
-
-    private EditText category;
-    private EditText title;
-    private CheckBox isOre;
-    private Button submit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,9 +37,6 @@ public class Satisfactory extends AppCompatActivity {
         TabLayout tabs = findViewById(R.id.tabs);
         tabs.setupWithViewPager(viewPager);
         FloatingActionButton fab = findViewById(R.id.fab);
-        submit = (Button)SatisfactoryItem.findViewById(R.id.successForm);
-        FirebaseApp.initializeApp(this);
-        mDatabase = FirebaseDatabase.getInstance().getReference();
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,28 +45,5 @@ public class Satisfactory extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-        submit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                category = findViewById(R.id.categorie);
-                title = findViewById(R.id.itemName);
-                isOre = findViewById(R.id.isOre);
-                writeItem();
-            }
-        });
-    }
-
-    private void writeItem() {
-        String categoryS = category.getText().toString();
-        String titleS = title.getText().toString();
-        String isOreS;
-        if (isOre.isChecked()) {
-            isOreS = "true";
-        } else {
-            isOreS = "false";
-        }
-
-        mDatabase.child("satisfactory").child(categoryS).setValue(titleS);
-        mDatabase.child("satisfactory").child(categoryS).setValue(isOreS);
     }
 }
