@@ -5,10 +5,43 @@
     android:layout_height="match_parent"
     tools:context=".ecoItem">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="satis item" />
+        android:orientation="vertical">
 
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Test Datenbank" />
+
+        <EditText
+            android:id="@+id/categorie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Kategorie"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/itemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Item Name"
+            android:inputType="textPersonName" />
+
+        <CheckBox
+            android:id="@+id/isOre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ist das Item ein Erz?" />
+
+        <Button
+            android:id="@+id/successForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Senden" />
+    </LinearLayout>
 </FrameLayout>
