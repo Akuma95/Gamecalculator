@@ -1,19 +1,21 @@
-package com.example.gamecalculator;
+package com.example.gamecalculator.eco.tabs;
 
 import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
 
 import androidx.fragment.app.Fragment;
 
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.example.gamecalculator.R;
+
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link SatisfactoryItem#newInstance} factory method to
+ * Use the {@link ecoItem#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class SatisfactoryItem extends Fragment {
+public class ecoItem extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +26,7 @@ public class SatisfactoryItem extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public SatisfactoryItem() {
+    public ecoItem() {
         // Required empty public constructor
     }
 
@@ -37,8 +39,8 @@ public class SatisfactoryItem extends Fragment {
      * @return A new instance of fragment ecoItem.
      */
     // TODO: Rename and change types and number of parameters
-    public static SatisfactoryItem newInstance(String param1, String param2) {
-        SatisfactoryItem fragment = new SatisfactoryItem();
+    public static ecoItem newInstance(String param1, String param2) {
+        ecoItem fragment = new ecoItem();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,6 +61,6 @@ public class SatisfactoryItem extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_satisfactory_item, container, false);
+        return inflater.inflate(R.layout.fragment_eco_item, container, false);
     }
 }

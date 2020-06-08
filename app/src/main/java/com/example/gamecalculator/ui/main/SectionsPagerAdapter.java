@@ -9,8 +9,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.example.gamecalculator.R;
-import com.example.gamecalculator.ecoItem;
-import com.example.gamecalculator.ecoRezept;
+import com.example.gamecalculator.eco.tabs.ecoItem;
+import com.example.gamecalculator.eco.tabs.ecoRezept;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to
